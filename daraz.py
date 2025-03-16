@@ -20,7 +20,7 @@ for i in range (1,6):
     link=driver.find_element(By.XPATH,'//*[@id="root"]/div/div[2]/div[1]/div/div[1]/div[2]/div['+j+']/div/div/div[2]/div[2]/a').get_attribute('href')
     link_list.append(link)
 
-    image=driver.find_element(By.XPATH,'//*[@id="root"]/div/div[2]/div[1]/div/div[1]/div[2]/div[1]/div/div/div[1]/div/a/div/img').get_attribute('src')
+    image=driver.find_element(By.XPATH,'//*[@id="root"]/div/div[2]/div[1]/div/div[1]/div[2]/div['+j+']/div/div/div[1]/div/a/div/img').get_attribute('src')
     image_list.append(image)
 
 print(name_list)
